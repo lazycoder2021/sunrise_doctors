@@ -1,0 +1,456 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    padding: 0px;
+    margin: 0px;
+}
+.contianer-1 {
+    background-color: #C9E0F0;
+    height: 65vh;
+    padding: 0px !important;
+    position: relative;
+}
+.fixed-box {
+    width: 60px;
+    height: 250px;
+    background-color: #E48400;
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    z-index: 100;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.fixed-box span {
+    font-size: 30px;
+    color: white;
+}
+.logo-section {
+    height: 25%;
+    background-color: aliceblue;
+    padding: 0px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo-innner-box {
+    height: 100% !important;
+    width: 80% !important;
+    padding: 0px !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.left-logo {
+    //border: 1px solid  black;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.right-logo {
+    //border: 1px solid black;
+    height: 100%;
+    padding: 0px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.left-logo img {
+    width: 60%;
+    height: 60%;
+    object-fit: cover;
+}
+.right-logo-innersection {
+    //border: 1px solid black;
+    height: 100%;
+    padding: 0px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px !important;
+}
+.right-logo-innersection-content {
+    //border: 1px solid black;
+    height: 40%;
+    padding: 0px !important;
+}
+.right-logo-innersection-content-left{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0px !important;
+}
+.right-logo-innersection-content-right {
+    //border: 1px solid black;
+    height: 100%;
+    padding: 6px -10px !important;
+    line-height: 7px !important;
+}
+.right-logo-innersection-content-right h1 {
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    color: #AF5250;
+}
+.right-logo-innersection-content-right a {
+    color: #D1323A;
+    letter-spacing: 0.5px;
+    font-weight: 700;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.right-logo-innersection-content-right a:hover {
+    color: #D1323A;
+    text-decoration: none;
+}
+.color h1 {
+    color: #83C1EF;
+}
+.color a {
+    color: #437FB1;
+}
+.color a:hover {
+    color: #437FB1;
+}
+.nav-bar-section {
+    height: 7%;
+    background-color: #114978;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-bar-section ul {
+    display: flex;
+    margin-top: 15px;
+    gap: 100px;
+}
+.nav-bar-section li {
+    list-style: none;
+}
+.nav-bar-section a {
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+    font-weight: 100;
+    position: relative;
+    color: white;
+} 
+.nav-bar-section a::after {
+    position: absolute;
+    content: '';
+    width: 2px;
+    height: 27px;
+    left: 0px;
+    top: 0px;
+    background-color: #ffffff;
+    margin-top: -5px;
+    transform: translateX(-50px);
+}
+.banner-section {
+    height: 68%;
+    background-color: #D1323A;
+    background-image: url("image/What-Knowledge-Management-Strategies-Should-a-Successful-Healthcare-Organization-Implement-700x366.jpg.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.banner-section::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    right: 0px;
+    background-color: #c0e1fa;
+    opacity: 0.6;
+}
+.doctor-box {
+    width: 230px;
+    height: 80px;
+    background-color: #114978;
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+    z-index: 100;
+}
+.doctor-box h1 {
+    font-size: 29px;
+    color: white;
+    letter-spacing: 3px;
+    font-weight: 100;
+    margin: 25px 50px 50px 65px;
+}
+.orage-box1 {
+    width: 120px;
+    height: 50px;
+    background-color: #FBBA16;
+    position: absolute;
+    right: 270px;
+    bottom: 20px;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: 1px solid #945600;
+}
+.orage-box1 span, .blue-box span {
+    font-size: 17px;
+    color: white;
+}
+.orage-box1 h1, .blue-box h1 {
+    font-size: 17px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: white;
+}
+.blue-box {
+    width: 250px;
+    height: 50px;
+    background-color: #3577AD;
+    position: absolute;
+    right: 10px;
+    bottom: 20px;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: 1px solid ;
+}
+
+.contianer-2 {
+    height: 270vh;
+    padding: 0px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px;
+}
+.container-2-inner-box {
+    width: 80% !important;
+    height: 14%;
+    padding: 0px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+.doctors-img {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+} 
+.doctors-img img {
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.doctors-img h1 {
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: #83C1EF;
+}
+.doctors-img p {
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    color:  #FBBA16;
+}
+.last {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 25px;
+}
+.container-13 {
+    height: 50vh;
+    background-color: #333333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+
+}
+.social-medai-section {
+    height: 85%;
+    width: 80% !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px !important;
+    gap: 10px;
+}
+.social-medai-section-parts {
+    height: 100%;
+}
+.parts1 {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+}
+.parts1 h1 {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #90C64C;
+    letter-spacing: 1px;
+}
+.parts1 p {
+    font-size: 15px;
+    text-transform: capitalize;
+    color: #fcfcfc;
+    letter-spacing: 1px;
+    width: 80%;
+    line-height: 25px;
+}
+.parts2 {
+
+}
+.parts2 h1 {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #90C64C;
+    letter-spacing: 1px;
+}
+.parts2 ul {
+    padding: 0px !important;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+.parts2 ul li {
+    list-style: none;
+}
+.parts2 ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    margin-left: 7px;
+    letter-spacing: 0.5px;
+    text-transform: capitalize;
+}
+.social-icon {
+    margin-top: 20px;
+}
+.social-icon ul {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.social-icon ul span {
+    background-color: #90C64C;
+    padding: 10px 10px;
+    border-radius: 50%;
+}
+
+
+
+@media only screen and (max-width:500px) {
+    .contianer-1 {
+        height: 100vh;
+        padding: 0px !important;
+        min-width: 500px !important;
+        width: 100% !important;
+    }
+    .logo-section {
+        width: 100% !important;
+        height: 70px !important;
+        background-color: #ededed;
+    }
+    .logo-innner-box {
+        height: auto;
+        width: 100% !important;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .left-logo {
+        height: 100%;
+        width: 20% !important;
+    }
+    .right-logo {
+        width: 80% !important;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 0px !important;
+        gap: 20px;
+    }
+    .ambulance-icon {
+        font-size: 23px !important;
+    }
+    .right-logo-innersection {
+        width: 33.3% !important;
+    }
+    .right-logo-innersection-content {
+        height: 100%;
+        width: 33.3%;
+        z-index: 1;
+        display: flex;
+        flex-direction: row;
+    }
+    .right-logo-innersection-content-right h1  {
+        color: #AF5250;
+        z-index: 100;
+        font-size: 12px;
+    }
+    .right-logo-innersection-content-right a  {
+        color: #AF5250;
+        z-index: 100;
+        font-size: 13px;
+    }
+    .hide-box {
+        display: none;
+    }
+    .hide-icon {
+        font-size: 16px;
+        margin-left: 60px;
+    }
+    .fixed-box {
+        display: none;
+    }
+    .doctor-box {
+        top: 20px;
+    }
+    .orage-box1 {
+        left: 70px;
+    }
+    .blue-box {
+        right: 40px;
+    }
+    .contianer-2 {
+        height: auto;
+    }
+    .container-2-inner-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .container-13 {
+        height: auto;
+    }
+    .social-medai-section {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+    }
+}
